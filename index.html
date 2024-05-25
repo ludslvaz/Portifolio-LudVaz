@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleCard.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>LudmillaVaz.dev</title>
+</head>
+<body>
+    <header>
+        <div class="container-home">
+            <a href="#"><img src="./imgs/logo.svg" alt="logo"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a class="icon-menu">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilites">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="big-container">
+        <section id="container">
+            <div class="container-box">
+                <div class="icon-hello">
+                    <!-- <span>👋🏻</span> -->
+                    <p class="gradient">Olá, meu nome é</p>
+                </div>
+                <h1>Ludmilla Vaz<span class="dot-gradient">.</span></h1>
+                <h2 class="text-animation">{Desenvolvedora <span>Front-End</span>}</h2>
+                <p class="txt-home">Bem-vindo ao meu portfólio. Sinta-se à vontade
+                     para navegar em <br> meu site e deixar suas sugestões em meu
+                     repositório Github. <br> Obrigada pela visita!</p>
+                <div class="btn">
+                        <button type="button" class="btn-home" onclick="abrirPDF()">
+                            <a href="#" class="bnt-install-b2">
+                                <img class="install-btn" src="./imgs/install-icon-btn.svg" alt="install-icon">
+                                <b>Resume</b>
+                            </a>
+                        </button>
+                </div>
+            </div>
+            <img class="doll-img" src="./imgs/img-home.svg" alt="doll-img">
+        </section>
+        <img class="scroll-img" src="./imgs/scroll.svg" alt="scroll-img">
+        <hr class="row">
+        <section id="sobre">
+            <div class="about-me">
+                <h2 class="top-subtitle">sobre<span class="dot-gradient">.</span></h2>
+                <div class="img-me"><img src="./imgs/img-me.svg" alt="me"></div>
+                <div class="txt-me">
+                    
+                    <h3 class="subtitle">UM POUCO SOBRE MIM</h3>
+                    <p>O design sempre me fascinou. A capacidade de transformar ideias em soluções visuais que impactam diretamente a vida das pessoas é o que me move. Dedico-me a criar interfaces intuitivas e funcionais, que proporcionem aos usuários interações fluidas e memoráveis.</p>
+                    <p>A busca por aprimoramento é constante em minha jornada. Mergulho em pesquisas, estudo as últimas tendências e procuro sempre expandir meu repertório técnico, com o objetivo de oferecer soluções inovadoras e alinhadas às necessidades do mercado.</p>
+                    <span class="dot"></span>
+                    <span>Atualmente estou graduando em Engenharia de Software na UNDB. </span>
+                    <div class="icons animeScale">
+                        <a href="https://github.com/ludslvaz" target="_blank">
+                            <img src="./imgs/icons/gitHub.svg" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/in/ludmilla-vaz-93b226217/" target="_blank">
+                            <img src="./imgs/icons/linkedin.svg" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/vaz21__luh/" target="_blank">
+                            <img src="./imgs/icons/insta.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="row">
+        <section id="habilites">
+            <div class="infos">
+                <h2 class="top-subtitle">habilidades<span class="dot-gradient">.</span></h2>
+                <div class="list-skills">
+                    <h3>Linguagens e tecnologias</h3>
+                    <div>
+                        <ul>
+                            <li class="icons-habilidades"><img src="./imgs/icons-habilidades/html.svg" alt="">HTML5</li>
+                            <li class="icons-habilidades"><img src="./imgs/icons-habilidades/css.svg" alt="">CSS3</li>
+                            <li class="icons-habilidades"><img src="./imgs/icons-habilidades/js.svg" alt="">JavaScript</li>
+                            <li class="icons-habilidades"><img src="./imgs/icons-habilidades/python.svg" alt="">Python</li>
+                            <li class="icons-habilidades"><img src="./imgs/icons-habilidades/git.svg" alt="">Git</li>
+                            <li class="icons-habilidades"><img src="./imgs/icons-habilidades/figma.svg" alt="">Figma</li>
+                            <li class="icons-habilidades"><img src="./imgs/icons-habilidades/responsive.svg" alt="">Design Responsivo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="infos">
+                <h2 class="top-subtitle top-projects">projetos<span class="dot-gradient">.</span></h2>
+                <div class="list-skills">
+                    <h3>Alguns dos meus projetos</h3>
+                    <div class="container-cards">
+                        <div class="wrapper">
+                            <i id="left" class="fa-solid fa-angle-left"></i>
+                            <ul class="carousel">
+                              <li class="card">
+                                <div class="img"><img src="images/img-1.svg" alt="img" draggable="false"></div>
+                                <div class="txt">
+                                  <div class="txt-title">
+                                    <h2>BloomNest</h2>
+                                    <img class="plus-icon" src="./images/plus-icon.svg" alt="" onclick="abrirSite1()">
+                                  </div>
+                                  <p>Desenvolvi um Ecommerce de flores. Uma página de produtos onde cada produto tem um botão para adicionar ao carrinho da página e ao clicar no carrinho aparece todos os produtos adicionados.</p>
+                                  <div class="icons2">
+                                    <img src="./images/icons-cards/html.svg" alt="html-icon-img">
+                                    <img src="./images/icons-cards/css.svg" alt="css-icon-img">
+                                    <img src="./images/icons-cards/js.svg" alt="js-icon-img">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="card">
+                                <div class="img"><img src="images/img-2.svg" alt="img" draggable="false"></div>
+                                <div class="txt">
+                                  <div class="txt-title">
+                                    <h2>OxyBook</h2>
+                                    <img class="plus-icon" src="./images/plus-icon.svg" alt="" onclick="abrirSite2()">
+                                  </div>
+                                  <p>Desenvolvi um blog em equipe sobre literatura, onde apresentamos notícias e oferecemos a oportunidade de fazer resenhas dos livros que você gosta.</p>
+                                  <div class="icons2">
+                                    <img src="./images/icons-cards/html.svg" alt="html-icon-img">
+                                    <img src="./images/icons-cards/css.svg" alt="css-icon-img">
+                                    <img src="./images/icons-cards/js.svg" alt="js-icon-img">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="card">
+                                <div class="img"><img src="images/img-3.svg" alt="img" draggable="false"></div>
+                                <div class="txt">
+                                  <div class="txt-title">
+                                    <h2>Rake Up</h2>
+                                    <img class="plus-icon" src="./images/plus-icon.svg" alt="" onclick="abrirSite3()">
+                                  </div>
+                                  <p>Desenvolvi uma interface que buscasse os dados da api do github para a página, mostrando a imagem, nome, link do perfil, descrição e lista de repositórios de qualquer usuário.</p>
+                                  <div class="icons2">
+                                    <img src="./images/icons-cards/html.svg" alt="html-icon-img">
+                                    <img src="./images/icons-cards/css.svg" alt="css-icon-img">
+                                    <img src="./images/icons-cards/js.svg" alt="js-icon-img">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="card">
+                                <div class="img"><img src="images/img-4.svg" alt="img" draggable="false"></div>
+                                <div class="txt">
+                                  <div class="txt-title">
+                                    <h2>Forms Trilhas</h2>
+                                    <img class="plus-icon" src="./images/plus-icon.svg" alt="" onclick="abrirSite4()">
+                                  </div>
+                                  <p>O Forms Trilhas é uma plataforma onde os candidatos podem se cadastrar para participar do programa Trilhas. Eles podem preencher um formulário de cadastro para que os seus dados sejam validados pelo programa Trilhas Inova/MA.</p>
+                                  <div class="icons2">
+                                    <img src="./images/icons-cards/html.svg" alt="html-icon-img">
+                                    <img src="./images/icons-cards/css.svg" alt="css-icon-img">
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <i id="right" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container-contact">
+                <h2 class="top-subtitle top-projects">contato<span class="dot-gradient">.</span></h2>
+                <div class="list-skills">
+                    <h3>Como me encontrar</h3>
+                    <div class="contact-list">
+                        <div class="contact-icons">
+                            <a href="mailto:ludvazdev@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <div class="elements-contact">
+                                    <div class="boll-contact">
+                                        <img src="./imgs/icons-contact/email.svg" alt="email-icon">
+                                    </div>
+                                    <p>E-mail</p>
+                                    <span>ludvazdev@gmail.com</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact-icons">
+                            <a href="https://github.com/ludslvaz" target="_blank" rel="noopener noreferrer">
+                                <div class="elements-contact">
+                                    <div class="boll-contact">
+                                        <img src="./imgs/icons-contact/gitHub.svg" alt="gitHub-icon">
+                                    </div>
+                                    <p>GitHub</p>
+                                    <span>@ludslvaz</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact-icons">
+                            <a href="https://www.linkedin.com/in/ludmilla-vaz-93b226217/" target="_blank" rel="noopener noreferrer">
+                                <div class="elements-contact">
+                                    <div class="boll-contact">
+                                        <img class="linkedin" src="./imgs/icons-contact/linkedin.svg" alt="linkedin-icon">
+                                    </div>
+                                    <p>Linkedin</p>
+                                    <span>@LudmillaVaz</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact-icons">
+                            <a href="https://wa.me/5598985359915" target="_blank" rel="noopener noreferrer">
+                                <div class="elements-contact">
+                                    <div class="boll-contact">
+                                        <img src="./imgs/icons-contact/watts.svg" alt="linkedin-icon">
+                                    </div>
+                                    <p>Whatsapp</p>
+                                    <span>(98) 9 8535-9915</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="contact-me">
+            <p>
+                Obrigada por visitar meu portfólio! Se você está interessado no meu trabalho, gostaria de discutir uma colaboração ou apenas trocar ideias, sinta-se à vontade para entrar em contato. Estou sempre aberta a novas conexões e ansiosa para explorar novas oportunidades. Vamos criar algo incrível juntos!
+            </p>
+        </div>
+        <hr class="row top-row">
+    </main>
+    <footer>
+        <div class="footer-phase">
+            <p>Portfólio Ludmilla Silva Vaz © 2024</p>
+        </div>
+    </footer>
+</body>
+<script src="./js/scriptPDF.js"></script>
+<script src="./js/script.js" defer></script>
+<script src="./js/hamb.js"></script>
+<script src="./js/script-projects.js"></script>
+</html>
